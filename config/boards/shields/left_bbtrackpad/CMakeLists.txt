@@ -1,5 +1,5 @@
 zephyr_library()
-zephyr_library_sources(custom_driver_left/a320_0x3B.c)
+zephyr_library_sources(custom_driver_left/a320.c)
 zephyr_library_sources(custom_driver_left/trackpad_led.c)
 zephyr_library_include_directories(${ZEPHYR_BASE}/drivers)
 zephyr_library_include_directories(../../../include)
