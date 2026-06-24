@@ -1,8 +1,8 @@
 layout: {zmk_keyboard: zitaotech_sofle}
 layers:
   QWERTY: [ESC, '1', '2', '3', '4', '5', MUTE, MUTE, '6', '7', '8', '9', '0', BSPC, TAB, Q, W, E, R, T, Y, U, I, O, P, \, CAPS, A, S, D, F, G, '&mkp LCLK', '&mkp
-      LCLK', H, J, K, L, ;, ENTER, LSHFT, Z, X, C, V, B, PG DN, PG UP, '&msc SCRL_DOWN', '&msc SCRL_UP', N, M, ',', ., /, RSHIFT, LCTRL, LGUI, LALT, SPACE, LOWER,
-    LOWER, SPACE, '-', '=', '`']
+      LCLK', H, J, K, L, ;, ENTER, LSHFT, Z, X, C, V, B, PG DN, PG UP, '&msc SCRL_DOWN', '&msc SCRL_UP', N, M, ',', ., /, RSHIFT, LOWER, LGUI, LALT, SPACE, LCTRL,
+    '`', ']', '-', '=', LOWER]
   LOWER:
   - ESC
   - F1
@@ -60,12 +60,12 @@ layers:
   - ']'
   - _
   - +
-  - '&bootloader'
+  - {t: '&bootloader', type: held}
   - LGUI
   - LALT
   - SPACE
-  - {t: LOWER, type: held}
-  - LOWER
+  - RAISE
+  - RAISE
   - SPACE
   - {t: ▽, type: trans}
   - .
@@ -127,11 +127,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
+  - {type: held}
   - LGUI
   - LALT
   - SPACE
-  - LOWER
+  - {t: LOWER, type: held}
   - LOWER
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -159,7 +159,7 @@ layers:
   - R
   - T
   - Y
-  - {t: U, h: '&mkp MB3'}
+  - U
   - I
   - O
   - P
@@ -173,7 +173,7 @@ layers:
   - '&mkp LCLK'
   - '&mkp LCLK'
   - H
-  - {t: J, h: '&mkp MB1'}
+  - J
   - K
   - L
   - ;
@@ -189,20 +189,20 @@ layers:
   - ''
   - ''
   - N
-  - {t: M, h: '&mkp MB2'}
+  - M
   - ','
   - .
   - /
   - RSHIFT
-  - LCTRL
-  - LGUI
-  - LALT
-  - SPACE
-  - '&mkp MB1'
-  - '&mkp MB1'
-  - '&tdRMCLK'
-  - '-'
-  - '='
-  - '`'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   RESERVE: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
     '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
