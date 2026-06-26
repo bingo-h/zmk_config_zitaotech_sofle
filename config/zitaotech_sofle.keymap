@@ -130,7 +130,7 @@
         default_layer {
             display-name = "Colemak";
             bindings = <
-&kp PRINTSCREEN  &kp N1        &kp N2          &kp N3                  &kp N4       &kp N5       &kp C_MUTE  &kp C_MUTE     &kp N6                 &kp N7        &kp N8    &kp N9       &kp N0           &kp BSPC
+&kp PRINTSCREEN  &kp N1        &kp N2          &kp N3                  &kp N4       &kp N5       &kp C_MUTE  &kp C_MUTE     &kp N6                 &kp N7        &kp N8    &kp N9       &kp N0           &kp DELETE
 &kp TAB          &kp Q         &kp W           &kp F                   &kp P        &kp G        &kp J       &kp L          &kp U                  &kp Y         &kp SEMI  &kp INSERT
 &kp ESCAPE       &hm LGUI A    &hm LEFT_ALT R  &hm LCTRL S             &hm LSHFT T  &kp D        &mkp LCLK   &mkp LCLK      &kp H                  &kp N         &kp E     &kp I        &kp O            &kp APOS
 &kp LSHFT        &kp Z         &kp X           &kp C                   &kp V        &kp B        &kp PG_DN   &kp PG_UP      &msc SCRL_DOWN         &msc SCRL_UP  &kp K     &hm RSHFT M  &hm RCTRL COMMA  &hm RIGHT_ALT PERIOD  &hm RGUI SLASH  &kp RSHIFT
