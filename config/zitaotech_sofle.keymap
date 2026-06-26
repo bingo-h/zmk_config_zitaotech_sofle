@@ -128,13 +128,13 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "QWERTY";
+            display-name = "Colemak";
             bindings = <
-&kp ESC    &kp N1    &kp N2    &kp N3     &kp N4     &kp N5     &kp C_MUTE         &kp C_MUTE  &kp N6          &kp N7        &kp N8  &kp N9    &kp N0     &kp BSPC
-&kp TAB    &kp Q     &kp W     &kp E      &kp R      &kp T      &kp Y              &kp U       &kp I           &kp O         &kp P   &kp BSLH
-&kp CAPS   &kp A     &kp S     &kp D      &kp F      &kp G      &mkp LCLK          &mkp LCLK   &kp H           &kp J         &kp K   &kp L     &kp SEMI   &kp ENTER
-&kp LSHFT  &kp Z     &kp X     &kp C      &kp V      &kp B      &kp PG_DN          &kp PG_UP   &msc SCRL_DOWN  &msc SCRL_UP  &kp N   &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp RSHIFT
-&mo 1      &kp LGUI  &kp LALT  &kp SPACE  &kp LCTRL  &kp GRAVE  &kp RIGHT_BRACKET  &kp MINUS   &kp EQUAL       &mo 1
+&kp PRINTSCREEN       &kp N1        &kp N2          &kp N3       &kp N4       &kp N5       &kp C_MUTE  &kp C_MUTE     &kp N6                 &kp N7        &kp N8    &kp N9       &kp N0           &kp BSPC
+&kp TAB               &kp Q         &kp W           &kp F        &kp P        &kp G        &kp J       &kp L          &kp U                  &kp Y         &kp SEMI  &kp INSERT
+&kp LEFT_PARENTHESIS  &mt LGUI A    &mt LEFT_ALT R  &mt LCTRL S  &mt LSHFT T  &kp D        &mkp LCLK   &mkp LCLK      &kp H                  &kp N         &kp E     &kp I        &kp O            &kp APOS
+&kp LSHFT             &kp Z         &kp X           &kp C        &kp V        &kp B        &kp PG_DN   &kp PG_UP      &msc SCRL_DOWN         &msc SCRL_UP  &kp K     &mt RSHFT M  &mt RCTRL COMMA  &mt RIGHT_ALT PERIOD  &mt RGUI SLASH  &kp RSHIFT
+&to 4                 &kp CAPSLOCK  &kp ESCAPE      &mo 2        &lt 1 TAB    &lt 1 ENTER  &kp SPACE   &kp BACKSPACE  &kp RIGHT_PARENTHESIS  &to 4
             >;
 
             sensor-bindings =
@@ -145,11 +145,11 @@
         lower_layer {
             display-name = "LOWER";
             bindings = <
-&kp ESC    &kp F1    &kp F2    &kp F3     &kp F4  &kp F5           &bt BT_CLR  &kp C_MUTE  &kp F6      &kp F7      &kp F8    &kp F9    &kp F10   &kp DEL
-&kp TAB    &trans    &kp UP    &trans     &trans  &out OUT_TOG     &kp F11     &kp F12     &trans      &trans      &kp HOME  &kp BSLH
-&kp CAPS   &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans           &mkp RCLK   &mkp RCLK   &trans      &trans      &trans    &trans    &kp SQT   &kp ENTER
-&kp LSHFT  &trans    &trans    &trans     &trans  &rgb_ug RGB_TOG  &trans      &trans      &bl BL_DEC  &bl BL_INC  &trans    &trans    &kp LBKT  &kp RBKT   &kp UNDER  &kp PLUS
-&BOT       &kp LGUI  &kp LALT  &kp SPACE  &mo 2   &mo 2            &kp SPACE   &trans      &kp DOT     &BOT
+&trans  &kp F1            &kp F2             &kp F3          &kp F4           &kp F5             &bt BT_CLR  &kp C_MUTE  &kp F6         &kp F7          &kp F8       &kp F9     &kp F10        &kp F11
+&trans  &kp N5            &kp NUMBER_6       &kp N7          &kp N8           &trans             &kp TILDE   &kp PIPE    &kp UP         &kp UNDERSCORE  &kp PLUS     &kp F12
+&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GRAVE          &mkp RCLK   &mkp RCLK   &kp BACKSLASH  &kp LEFT        &kp DOWN     &kp RIGHT  &kp MINUS      &kp EQUAL
+&trans  &kp EXCLAMATION   &kp AT             &kp HASH        &kp DOLLAR       &LMouse_sc 0 MCLK  &trans      &trans      &bl BL_DEC     &bl BL_INC      &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &trans  &trans
+&BOT    &trans            &trans             &trans          &kp LG(SPACE)    &kp LG(SPACE)      &trans      &trans      &trans         &BOT
             >;
 
             sensor-bindings = <&BLE_encoder &inc_dec_kp UP DOWN>;
@@ -158,11 +158,11 @@
         raise_layer {
             display-name = "RAISE";
             bindings = <
-&kp ESC    &kp F1    &kp F2    &kp F3     &kp F4  &kp F5           &bt BT_CLR  &kp C_MUTE  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp BSPC
-&kp TAB    &trans    &kp UP    &trans     &trans  &out OUT_TOG     &trans      &trans      &trans  &trans  &trans  &trans
-&kp CAPS   &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans           &mkp RCLK   &none       &trans  &trans  &trans  &trans  &trans   &trans
-&kp LSHFT  &trans    &trans    &trans     &trans  &rgb_ug RGB_TOG  &trans      &trans      &none   &none   &trans  &trans  &trans   &trans    &trans  &trans
-&none      &kp LGUI  &kp LALT  &kp SPACE  &mo 1   &mo 1            &trans      &trans      &trans  &trans
+&trans     &trans     &trans        &trans        &trans         &trans           &bt BT_CLR  &kp C_MUTE  &trans       &trans         &trans         &trans   &trans         &trans
+&mkp MCLK  &mkp LCLK  &mkp RCLK     &kp LG(UP)    &trans         &out OUT_TOG     &trans      &trans      &kp PAGE_UP  &kp LG(MINUS)  &kp LG(PLUS)   &trans
+&trans     &kp LGUI   &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(RIGHT)  &kp LG(F)        &mkp RCLK   &none       &trans       &kp HOME       &kp PAGE_DOWN  &kp END  &kp LG(MINUS)  &kp LG(EQUAL)
+&trans     &trans     &trans        &trans        &trans         &rgb_ug RGB_TOG  &trans      &trans      &none        &none          &trans         &trans   &trans         &trans         &trans  &trans
+&none      &trans     &trans        &trans        &trans         &trans           &trans      &trans      &trans       &none
             >;
         };
 
@@ -178,14 +178,18 @@
         };
 
         RES_layer {
-            display-name = "RESERVE";
+            display-name = "QWERTY";
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&kp ESC    &kp N1    &kp N2    &kp N3     &kp N4     &kp N5     &kp C_MUTE         &kp C_MUTE  &kp N6          &kp N7        &kp N8  &kp N9    &kp N0     &kp BSPC
+&kp TAB    &kp Q     &kp W     &kp E      &kp R      &kp T      &kp Y              &kp U       &kp I           &kp O         &kp P   &kp BSLH
+&kp CAPS   &kp A     &kp S     &kp D      &kp F      &kp G      &mkp LCLK          &mkp LCLK   &kp H           &kp J         &kp K   &kp L     &kp SEMI   &kp ENTER
+&kp LSHFT  &kp Z     &kp X     &kp C      &kp V      &kp B      &kp PG_DN          &kp PG_UP   &msc SCRL_DOWN  &msc SCRL_UP  &kp N   &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp RSHIFT
+&to 0      &kp LGUI  &kp LALT  &kp SPACE  &kp LCTRL  &kp GRAVE  &kp RIGHT_BRACKET  &kp MINUS   &kp EQUAL       &to 0
             >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>,
+                <&inc_dec_kp LEFT RIGHT>;
         };
     };
 };
