@@ -130,16 +130,16 @@
         default_layer {
             display-name = "Colemak";
             bindings = <
-&kp PRINTSCREEN  &kp N1        &kp N2          &kp N3                  &kp N4       &kp N5       &kp C_MUTE  &kp C_MUTE     &kp N6                 &kp N7        &kp N8    &kp N9       &kp N0           &kp DELETE
-&kp TAB          &kp Q         &kp W           &kp F                   &kp P        &kp G        &kp J       &kp L          &kp U                  &kp Y         &kp SEMI  &kp INSERT
-&kp ESCAPE       &hm LGUI A    &hm LEFT_ALT R  &hm LCTRL S             &hm LSHFT T  &kp D        &mkp LCLK   &mkp LCLK      &kp H                  &kp N         &kp E     &kp I        &kp O            &kp APOS
-&kp LSHFT        &kp Z         &kp X           &kp C                   &kp V        &kp B        &kp PG_DN   &kp PG_UP      &msc SCRL_DOWN         &msc SCRL_UP  &kp K     &hm RSHFT M  &hm RCTRL COMMA  &hm RIGHT_ALT PERIOD  &hm RGUI SLASH  &kp RSHIFT
-&to 4            &kp CAPSLOCK  &kp ESCAPE      &lt 2 LEFT_PARENTHESIS  &lt 1 TAB    &lt 1 ENTER  &kp SPACE   &kp BACKSPACE  &kp RIGHT_PARENTHESIS  &to 4
+&kp PRINTSCREEN  &kp N1        &kp N2          &kp N3                  &kp N4       &kp N5       &kp C_MUTE  &kp C_PLAY_PAUSE  &kp N6                 &kp N7        &kp N8    &kp N9       &kp N0           &kp DELETE
+&kp TAB          &kp Q         &kp W           &kp F                   &kp P        &kp G        &kp J       &kp L             &kp U                  &kp Y         &kp SEMI  &kp INSERT
+&kp ESCAPE       &hm LGUI A    &hm LEFT_ALT R  &hm LCTRL S             &hm LSHFT T  &kp D        &mkp LCLK   &mkp LCLK         &kp H                  &kp N         &kp E     &kp I        &kp O            &kp APOS
+&kp LSHFT        &kp Z         &kp X           &kp C                   &kp V        &kp B        &kp PG_DN   &kp PG_UP         &msc SCRL_DOWN         &msc SCRL_UP  &kp K     &hm RSHFT M  &hm RCTRL COMMA  &hm RIGHT_ALT PERIOD  &hm RGUI SLASH  &kp RSHIFT
+&to 4            &kp CAPSLOCK  &kp ESCAPE      &lt 2 LEFT_PARENTHESIS  &lt 1 TAB    &lt 1 ENTER  &kp SPACE   &kp BACKSPACE     &kp RIGHT_PARENTHESIS  &to 4
             >;
 
             sensor-bindings =
                 <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>,
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+                <&inc_dec_kp C_NEXT C_PREVIOUS>;
         };
 
         lower_layer {
