@@ -150,7 +150,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&msc MOVE_Y(0)'
+  - '&msc MOVE_Y(5)'
   - '&mkp LCLK'
   - Gui+UP
   - '&mkp RCLK'
