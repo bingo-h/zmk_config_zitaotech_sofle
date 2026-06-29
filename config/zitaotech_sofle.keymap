@@ -159,7 +159,7 @@
             display-name = "RAISE";
             bindings = <
 &trans  &trans          &trans        &trans        &trans         &trans        &bt BT_CLR  &kp C_MUTE  &trans       &trans         &trans         &trans   &trans         &trans
-&trans  &msc MOVE_Y(0)  &mkp LCLK     &kp LG(UP)    &mkp RCLK      &out OUT_TOG  &trans      &trans      &kp PAGE_UP  &kp LG(MINUS)  &kp LG(PLUS)   &trans
+&trans  &msc MOVE_Y(5)  &mkp LCLK     &kp LG(UP)    &mkp RCLK      &out OUT_TOG  &trans      &trans      &kp PAGE_UP  &kp LG(MINUS)  &kp LG(PLUS)   &trans
 &trans  &kp LGUI        &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(RIGHT)  &kp LG(F)     &mkp RCLK   &none       &trans       &kp HOME       &kp PAGE_DOWN  &kp END  &kp LG(MINUS)  &kp LG(EQUAL)
 &trans  &kp NUMBER_1    &kp N2        &kp N3        &kp N4         &kp N5        &trans      &trans      &none        &none          &kp N6         &kp N7   &kp N8         &kp N9         &kp N0  &trans
 &none   &trans          &trans        &trans        &trans         &trans        &trans      &trans      &trans       &none
