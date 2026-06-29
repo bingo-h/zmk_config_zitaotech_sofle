@@ -149,11 +149,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '&mkp MCLK'
   - '&mkp LCLK'
-  - '&mkp RCLK'
   - Gui+UP
-  - RGB TOG
+  - '&mkp RCLK'
   - OUT TOG
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
