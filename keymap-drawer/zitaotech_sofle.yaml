@@ -150,7 +150,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp MB1'
+  - {t: ▽, type: trans}
   - '&mkp LCLK'
   - Gui+UP
   - '&mkp RCLK'
