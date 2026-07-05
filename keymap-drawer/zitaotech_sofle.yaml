@@ -27,7 +27,7 @@ layers:
   - Y
   - ;
   - INSERT
-  - ESCAPE
+  - (
   - {t: A, h: LGUI}
   - {t: R, h: LEFT ALT}
   - {t: S, h: LCTRL}
@@ -60,10 +60,10 @@ layers:
   - {t: QWERTY, h: toggle}
   - CAPSLOCK
   - ESCAPE
-  - {t: (, h: RAISE}
+  - {t: SPACE, h: RAISE}
   - {t: TAB, h: LOWER}
   - {t: ENTER, h: LOWER}
-  - SPACE
+  - {t: SPACE, h: RAISE}
   - BACKSPACE
   - )
   - {t: QWERTY, h: toggle}
