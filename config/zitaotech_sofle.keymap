@@ -145,11 +145,11 @@
         lower_layer {
             display-name = "LOWER";
             bindings = <
-&trans  &kp F1            &kp F2             &kp F3          &kp F4           &kp F5             &bt BT_CLR  &kp C_MUTE  &kp F6         &kp F7          &kp F8       &kp F9     &kp F10        &kp F11
-&trans  &kp N5            &kp NUMBER_6       &kp N7          &kp N8           &trans             &kp TILDE   &kp PIPE    &kp UP         &kp UNDERSCORE  &kp PLUS     &kp F12
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GRAVE          &mkp RCLK   &mkp RCLK   &kp BACKSLASH  &kp LEFT        &kp DOWN     &kp RIGHT  &kp MINUS      &kp EQUAL
-&trans  &kp EXCLAMATION   &kp AT             &kp HASH        &kp DOLLAR       &LMouse_sc 0 MCLK  &trans      &trans      &bl BL_DEC     &bl BL_INC      &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &trans  &trans
-&BOT    &trans            &trans             &trans          &kp LG(SPACE)    &kp LG(SPACE)      &trans      &trans      &trans         &BOT
+&trans  &kp F1            &kp F2             &kp F3          &kp F4           &kp F5         &bt BT_CLR  &kp C_MUTE  &kp F6         &kp F7          &kp F8       &kp F9     &kp F10        &kp F11
+&trans  &kp N5            &kp NUMBER_6       &kp N7          &kp N8           &trans         &kp TILDE   &kp PIPE    &kp UP         &kp UNDERSCORE  &kp PLUS     &kp F12
+&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GRAVE      &mkp RCLK   &mkp RCLK   &kp BACKSLASH  &kp LEFT        &kp DOWN     &kp RIGHT  &kp MINUS      &kp EQUAL
+&trans  &kp EXCLAMATION   &kp AT             &kp HASH        &kp DOLLAR       &trans         &trans      &trans      &bl BL_DEC     &bl BL_INC      &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &LMouse_sc 0 MB3  &trans
+&BOT    &trans            &trans             &trans          &kp LG(SPACE)    &kp LG(SPACE)  &trans      &trans      &trans         &BOT
             >;
 
             sensor-bindings = <&BLE_encoder &inc_dec_kp UP DOWN>;
