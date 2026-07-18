@@ -113,7 +113,7 @@ layers:
   - '@'
   - '#'
   - $
-  - '&mkp MCLK'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&bl BL_DEC'
@@ -122,7 +122,7 @@ layers:
   - ^
   - '&'
   - '*'
-  - {t: ▽, type: trans}
+  - '&mkp MB3'
   - {t: ▽, type: trans}
   - '&bootloader'
   - {t: ▽, type: trans}
